@@ -24,11 +24,11 @@ Install;
 - add moderateContent module to your main module
 - configure;
 
-app.config(function (moderateContentConfigProvider) {
-    //if the image should be censored, this image will be replaced with it.
-    moderateContentConfigProvider.setCensored('censored.jpg');
-    //if something goes wrong, the original image should be shown ?
-    moderateContentConfigProvider.setFallback(true);
+app.config(function (moderateContentConfigProvider) { <br>
+    //if the image should be censored, this image will be replaced with it.<br>
+    moderateContentConfigProvider.setCensored('censored.jpg');<br>
+    //if something goes wrong, the original image should be shown ?<br>
+    moderateContentConfigProvider.setFallback(true);<br>
   });
   
   
