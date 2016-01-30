@@ -1,7 +1,7 @@
 var app = angular.module('app', ['moderateContent']);
 
 app.config(function (moderateContentConfigProvider) {
-    moderateContentConfigProvider.setCensored('http://www.rockcellarmagazine.com/wp-content/uploads/2014/11/censored.jpg');
+    moderateContentConfigProvider.setCensored('censored.jpg');
     moderateContentConfigProvider.setFallback(true);
     });
 
