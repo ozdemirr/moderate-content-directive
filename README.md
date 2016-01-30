@@ -8,7 +8,7 @@ If you put image link into moderate-content attribute, the image's link will be 
 
 Example ;
 
-<img moderate-content="{{image}}" moderate-filters="a,t">
+//<img moderate-content="{{image}}" moderate-filters="a,t">
 
 Filters;
 
