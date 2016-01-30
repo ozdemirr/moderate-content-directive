@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <script src="vendor/angular.min.js"></script>
+    <script src="moderateContent.js"></script>
+    <script src="app.js"></script>
+    <title>Moderate Content Example</title>
+
+</head>
+
+<body>
+
+<div class="container" ng-controller="mainController" style="padding-top: 50px;">
+
+    <div class="row">
+
+        <div class="col-md-12 text-center">
+
+            <label for="basic-url">Insert an image url that you think it is adult content</label>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon3">URL</span>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" ng-model="newImage">
+            </div>
+
+            <button class="btn btn-default btn-xl" style="margin-top: 15px;" ng-click="addImage()" ng-disabled="!newImage">Submit</button>
+
+        </div>
+
+    </div>
+
+
+    <div class="row" style="margin-top:15px;">
+
+        <div class="col-md-4" ng-repeat="image in images">
+
+            <img moderate-content="{{image}}" moderate-filters="a,t" class="img-responsive">
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
