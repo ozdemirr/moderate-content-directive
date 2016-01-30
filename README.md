@@ -1,6 +1,8 @@
 # moderate-content-directive
 AngularJS Image Directive for moderatecontent.com 
 
+Demo : http://ozdemirr.github.io/moderate-content-directive
+
 Description:
 
 https://www.moderatecontent.com provides a content rating for any image and it's free. I just made a directive for img element.
